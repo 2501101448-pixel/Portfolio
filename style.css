@@ -10,7 +10,7 @@
 
 body {
   min-height: 100vh;
-  background: url(/image/b3.png) no-repeat center center/cover;
+  background: url(image/b3.png) no-repeat center center/cover;
   background-attachment: fixed;
   color: #222;
   font-size: 18px;
