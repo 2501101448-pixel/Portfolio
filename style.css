@@ -72,6 +72,9 @@ header {
   padding: 80px 0;
   color: #fff;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  padding: 80px 20px;
+  text-align: center;
+
 }
 
 .hero-left {
@@ -550,3 +553,33 @@ body.image-expanded {
   background-color: #ef4444;
   transform: translateY(-5px);
 }
+
+@media (max-width: 600px) {
+  .hero-search {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .hero-search button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .hero-search {
+    max-width: 450px;
+  }
+}
+
