@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <button id="backToTop" title="Back to top">
+      <i class="ri-arrow-up-line"></i>
+    </button>
   </head>
   <body>
     <div class="container">
@@ -23,6 +27,7 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -35,16 +40,23 @@
           <h3 class="name">Chiemel A. Santoile</h3>
           <h3>Web Developer & Programmer</h3>
           <p class="para">
-            I’m passionate about creating clean, responsive websites and writing efficient code. 
-            I work with HTML, CSS, and Python — and I have a strong foundation in programming through C language.
+            I’m passionate about creating clean, responsive websites and writing
+            efficient code. I work with HTML, CSS, and Python — and I have a
+            strong foundation in programming through C language.
           </p>
 
           <div class="actions">
-            <a href="page.html" class="btn">View more</a>
+            <a href="page.html" class="btn">View Projects</a>
             <nav class="social-links">
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-              <a href="#"><i class="ri-instagram-fill"></i></a>
-              <a href="mailto:your.email@example.com"><i class="ri-mail-fill"></i></a>
+              <a href="https://web.facebook.com/ciem.santoile/"
+                ><i class="ri-facebook-fill"></i
+              ></a>
+              <a href="https://www.instagram.com/ciemigop/"
+                ><i class="ri-instagram-fill"></i
+              ></a>
+              <a href="https://mail.google.com/mail/u/0/#inbox"
+                ><i class="ri-mail-fill"></i
+              ></a>
             </nav>
           </div>
         </div>
@@ -62,14 +74,40 @@
       <section class="about" id="about">
         <h2>About Me</h2>
         <p>
-          Hello! I'm <strong>Chiemel A. Santoile</strong>, a web developer and programmer who enjoys 
-          turning ideas into functional and beautiful websites. I’m skilled in HTML, CSS, and Python, 
-          and I started my programming journey with C language — which built my foundation in logic and problem-solving.
+          Hello! I'm <strong>Chiemel A. Santoile</strong>, a web developer and
+          programmer who enjoys turning ideas into functional and beautiful
+          websites. I’m skilled in HTML, CSS, and Python, and I started my
+          programming journey with C language — which built my foundation in
+          logic and problem-solving.
         </p>
         <p>
-          My goal is to continue improving as a developer and expand into full-stack web development, 
-          combining design, interactivity, and backend logic into seamless digital experiences.
+          My goal is to continue improving as a developer and expand into
+          full-stack web development, combining design, interactivity, and
+          backend logic into seamless digital experiences.
         </p>
+      </section>
+
+      <!-- ===== EDUCATION SECTION ===== -->
+      <section class="education" id="education">
+        <h2>Education</h2>
+        <div class="education-list">
+          <div class="edu-item">
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p><strong>Bukidnon State University</strong> | 2025 - Present</p>
+            <p>
+              Currently studying major subjects in programming, data structures,
+              and web development.
+            </p>
+          </div>
+          <div class="edu-item">
+            <h3>Senior High School (GAS Strand)</h3>
+            <p><strong>Bukidnon National High School</strong> | 2017 - 2023</p>
+            <p>
+              Developed problem-solving and analytical skills through computing
+              and math subjects.
+            </p>
+          </div>
+        </div>
       </section>
 
       <!-- ===== SKILLS SECTION ===== -->
@@ -86,7 +124,7 @@
           </div>
           <div class="skill">
             <i class="ri-javascript-fill"></i>
-            <span>Java<br>Script</span>
+            <span>Java<br />Script</span>
           </div>
           <div class="skill">
             <i class="ri-code-s-slash-line"></i>
@@ -98,7 +136,9 @@
       <!-- ===== CONTACT SECTION ===== -->
       <section class="contact" id="contact">
         <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+        <p>
+          Feel free to reach out for collaborations or just a friendly hello 👋
+        </p>
 
         <form class="contact-form">
           <input type="text" placeholder="Your Name" required />
@@ -113,5 +153,6 @@
         <p>© 2025 Chiemel A. Santoile. All Rights Reserved.</p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
