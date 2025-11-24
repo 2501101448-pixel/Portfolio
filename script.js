@@ -1,4 +1,20 @@
 
+const mobileBtn = document.getElementById("mobileMenuBtn");
+const navbar = document.getElementById("navbar");
+
+mobileBtn.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+
+  // Toggle icon change (menu <-> close)
+  const icon = mobileBtn.querySelector("i");
+  if (navbar.classList.contains("active")) {
+    icon.classList.replace("ri-menu-line", "ri-close-line");
+  } else {
+    icon.classList.replace("ri-close-line", "ri-menu-line");
+  }
+});
+
+
 // Select all project images
 const projectImages = document.querySelectorAll('.project-card img');
 

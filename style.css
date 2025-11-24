@@ -189,6 +189,57 @@ header {
   text-align: justify;
 }
 
+/* ===== MOBILE MENU BUTTON ===== */
+.mobile-menu-btn {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== NAVBAR MOBILE STYLES ===== */
+@media (max-width: 768px) {
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  /* Hide menu by default */
+  .navbar {
+    position: absolute;       /* Position below header */
+    top: 100%;                /* Right below header */
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    max-height: 0;            /* Hidden by default */
+    transition: max-height 0.4s ease-in-out;
+    z-index: 999;
+  }
+
+  .navbar.active {
+    max-height: 500px;        /* Expand to fit menu */
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+  }
+}
+
+
 /* ---------- Project Link Button ---------- */
 .project-link-btn {
   display: inline-block;
@@ -583,3 +634,112 @@ body.image-expanded {
   }
 }
 
+/* --- FIX PROFILE PIC POSITION ON MOBILE --- */
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right {
+    order: -1;   /* moves image to the top */
+    margin: 0 auto 20px auto;
+  }
+
+  .hero-left {
+    margin-left: 0;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+/* ==========================================
+   FIX TEXT SIZE FOR ALL MOBILE SCREENS
+========================================== */
+@media (max-width: 640px) {
+  .hero-left,
+  .hero-right {
+    padding-bottom: 0 !important;
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 1.2rem !important;
+    line-height: 1.3;
+    text-align: center !important;
+  }
+
+  h3 {
+    font-size: 1.20rem !important;
+    line-height: 1.3;
+    text-align: center !important;
+  }
+
+  h4 {
+    font-size: 1.0rem !important;
+    line-height: 1.3;
+    text-align: center !important;
+  }
+
+  p {
+    font-size: 0.85rem !important;
+    line-height: 1.5;
+    text-align: justify !important;
+    text-align: center !important;
+  }
+
+  /* Optional: reduce padding to fit text better */
+  section, .container {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
+@media (max-width: 760px) {
+
+  h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 1.2rem !important;
+    line-height: 1.3;
+    text-align: center !important;
+  }
+
+  h3 {
+    font-size: 1.20rem !important;
+    line-height: 1.3;
+    text-align: center !important;
+  }
+
+  h4 {
+    font-size: 1.0rem !important;
+    line-height: 1.3;
+    text-align: center !important;
+  }
+
+  p {
+    font-size: 0.85rem !important;
+    line-height: 1.5;
+    text-align: justify !important;
+    text-align: center !important;
+  }
+
+  /* Optional: reduce padding to fit text better */
+  section, .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
