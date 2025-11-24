@@ -652,8 +652,8 @@ body.image-expanded {
   }
 
   .profile-pic {
-    width: 180px;
-    height: 180px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -701,7 +701,6 @@ body.image-expanded {
   section, .container {
     padding-left: 5px !important;
     padding-right: 5px !important;
-    padding-bottom: 0px !important;
   }
 }
 
