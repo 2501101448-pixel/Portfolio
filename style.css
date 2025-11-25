@@ -697,10 +697,25 @@ body.image-expanded {
     text-align: center !important;
   }
 
+  .hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  padding-bottom:  0px !important;
+  text-align: center;
+
+}
+
   /* Optional: reduce padding to fit text better */
   section, .container {
     padding-left: 5px !important;
     padding-right: 5px !important;
+    height: auto !important;
+    padding-bottom: -150% !important;
   }
 }
 
@@ -740,5 +755,7 @@ body.image-expanded {
   section, .container {
     padding-left: 10px !important;
     padding-right: 10px !important;
+    height: auto !important;
+    padding-bottom: -150% !important;
   }
 }
