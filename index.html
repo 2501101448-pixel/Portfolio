@@ -1,165 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chiemel A. Santoile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- swiper css -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+
+    <!-- css -->
     <link rel="stylesheet" href="style.css" />
-    <!-- ===== BACK TO TOP BUTTON ===== -->
-    <button id="backToTop" title="Back to top">
-      <i class="ri-arrow-up-line"></i>
-    </button>
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    
-    <div class="container">
-      <!-- ===== HEADER ===== -->
-      <header>
-  <h1 class="logo">My Portfolio</h1>
+    <header class="header">
+      <a href="#" class="logo">My Porfolio </a>
 
-  <!-- MOBILE MENU BUTTON -->
-  <button class="mobile-menu-btn" id="mobileMenuBtn">
-    <i class="ri-menu-line"></i>
-  </button>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Skills</a>
+        <!--<a href="#portfolio">Portfolio</a>-->
+        <a href="#contact">Contact</a>
+      </nav>
 
-  <nav class="navbar" id="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+      <div class="bx bx-moon" id="darkMode-icon"></div>
 
-      <!-- ===== HERO SECTION ===== -->
-      <section class="hero" id="home">
-        <div class="hero-left">
-          <h3 class="name">Chiemel A. Santoile</h3>
-          <h3>Web Developer & Programmer</h3>
-          <p class="para">
-            I’m passionate about creating clean, responsive websites and writing
-            efficient code. I work with HTML, CSS, and Python — and I have a
-            strong foundation in programming through C language.
-          </p>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
 
-          <div class="actions">
-            <a href="page.html" class="btn">View Projects</a>
-            <nav class="social-links">
-              <a class="a1" href="https://web.facebook.com/ciem.santoile/"
-                ><i class="ri-facebook-fill"></i
-              ></a>
-              <a class="a1" href="https://www.instagram.com/ciemigop/"
-                ><i class="ri-instagram-fill"></i
-              ></a>
-              <a class="a1" href="https://mail.google.com/mail/u/0/#inbox"
-                ><i class="ri-mail-fill"></i
-              ></a>
-            </nav>
-          </div>
+    <!-- Home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I am</h3>
+        <h1><span class="multiple-text"></span></h1>
+        <p>
+          I am an IT student with a strong interest in technology and problem-solving.
+           My studies focus on areas such as programming, web development, databases, and networking,
+            which help me build both theoretical knowledge and practical skills. I am eager to keep learning new technologies and improving my abilities so I can apply them to real-world projects.
+             As a student, I am motivated, hardworking, and passionate about growing into a professional in the IT field.
+        </p>
+
+        <div class="social-media">
+          <a href="https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop"
+            ><i class="bx bx-envelope"></i
+          ></a>
+          <a href="https://github.com/2501101448-pixel" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.instagram.com/ciemigop/" target="_blank"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/ciem.santoile/" target="_blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
         </div>
 
-        <div class="hero-right">
-          <img
-            src="image/profile.jpg"
-            alt="Chiemel A. Santoile - profile"
-            class="profile-pic"
+        
+        
+      </div>
+
+      <div class="profession-container">
+        <div class="profession-box">
+          <div class="profession" style="--i: 0">
+            <i class="bx bx-code-alt"></i>
+            <h3>Web Developer</h3>
+          </div>
+          <div class="profession" style="--i: 1">
+            <i class="bx bx-bug-alt"></i>
+            <h3>Full-Stack</h3>
+          </div>
+          <div class="profession" style="--i: 2">
+            <i class="bx bxl-postgresql"></i>
+            <h3>DB Designer</h3>
+          </div>
+          <div class="profession" style="--i: 3">
+            <i class="bx bxl-android"></i>
+            <h3>App Developer</h3>
+          </div>
+
+          <div class="circle"></div>
+        </div>
+
+        <div class="overlay"></div>
+      </div>
+
+     <div class="home-img">
+  <img src="images/profile11.PNG" alt="Profile" />
+</div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/profile11.PNG" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Hi, my name is Chiemel A. Santoile. I am currently studying Information Technology at BUKIDNON STATE UNIVERSITY (BSU).</h3>
+        <p>
+          I am BS-Information Technology (IT) student with a strong passion for technology, programming, and problem-solving. I enjoy learning new skills, working on practical projects related to software and systems, and finding innovative solutions to challenges. 
+          My goal is to grow into a skilled IT professional by continuously improving my knowledge and gaining valuable hands-on experience.
+         
+        </p>
+        <a href="projects.html" class="project-link-btn">School Projects</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Skills</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bxl-css3"></i>
+          <h3>Web Development</h3>
+          <p>
+  I am a beginner web developer currently learning how to build and improve
+  websites. I’m developing my skills step by step, and this website is part of
+  my learning journey. Working on real projects will help me grow faster and
+  strengthen my problem-solving abilities.
+  <span class="more-text hidden" data-readmore-id="2">
+    <br /><br />
+    Right now, I have basic knowledge of HTML5, CSS, and JavaScript, and I’m
+    starting to explore React. I’m always open to learning new tools or
+    technologies if your team needs them. Every new challenge is an opportunity
+    for me to improve.
+  </span>
+</p>
+          <a href="#" class="read-more btn" data-readmore-id="2">Read More</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bxs-data"></i>
+          <h3>DataBases</h3>
+          <p>
+  I am still learning how databases work and am currently practicing the basics
+  through university assignments and personal exercises. I am exploring how data
+  is stored, organized, and retrieved, and I am gradually becoming more
+  comfortable with database concepts.
+  <span class="more-text hidden" data-readmore-id="3">
+    <br /><br />
+    As a beginner, I am learning about tables, queries, relationships, and how
+    to keep data organized. I am also practicing using PostgreSQL, MariaDB,
+    Azure, and Salesforce for simple tasks. I am starting to understand how to
+    design basic databases with ER diagrams and normalization, and I am excited
+    to continue learning and improving my skills in the future.
+  </span>
+</p>
+
+          <a href="#" class="read-more btn" data-readmore-id="3">Read More</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bxl-visual-studio"></i>
+          <h3>Backend</h3>
+          <p>
+  I’m still building my backend development skills, mainly using Python and
+  Java. I have also learned the basics of C, C++, PHP, and I am currently
+  exploring APEX. 
+  <span class="more-text hidden" data-readmore-id="4">
+    <br /><br />
+    I use Git and GitHub for version control, and my main IDE is Visual Studio
+    Code, although I also work with JetBrains tools. I’m getting more familiar
+    with the AGILE methodology as I continue learning and gaining practical
+    experience.
+  </span>
+</p>
+          <a href="#" class="read-more btn" data-readmore-id="4">Read More</a>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="https://formspree.io/f/mqkogzbg" method="POST">
+        <div class="input-box">
+          <input type="text" name="Name" placeholder="Full Name (optional)" />
+          <input
+            type="email"
+            name="Email"
+            placeholder="Email Address*"
+            required
           />
         </div>
-      </section>
-
-      <!-- ===== ABOUT SECTION ===== -->
-      <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>
-          Hello! I'm <strong>Chiemel A. Santoile</strong>, a web developer and
-          programmer who enjoys turning ideas into functional and beautiful
-          websites. I’m skilled in HTML, CSS, and Python, and I started my
-          programming journey with C language — which built my foundation in
-          logic and problem-solving.
-        </p>
-        <p>
-          My goal is to continue improving as a developer and expand into
-          full-stack web development, combining design, interactivity, and
-          backend logic into seamless digital experiences.
-        </p>
-      </section>
-
-      <!-- ===== EDUCATION SECTION ===== -->
-      <section class="education" id="education">
-        <h2>Education</h2>
-        <div class="education-list">
-          <div class="edu-item">
-            <h3>Bachelor of Science in Information Technology</h3>
-            <p><strong>Bukidnon State University</strong> | 2025 - Present</p>
-            <p>
-              Currently studying major subjects in programming, data structures,
-              and web development.
-            </p>
-          </div>
-          <div class="edu-item">
-            <h3>Senior High School (GAS Strand)</h3>
-            <p><strong>Bukidnon National High School</strong> | 2017 - 2023</p>
-            <p>
-              Developed problem-solving and analytical skills through computing
-              and math subjects.
-            </p>
-          </div>
+        <div class="input-box">
+          <input
+            type="number"
+            name="Phone"
+            placeholder="Phone Number (optional)"
+          />
+          <input
+            type="text"
+            name="Subject"
+            placeholder="Email Subject*"
+            required
+          />
         </div>
-      </section>
+        <textarea
+          name="Message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer-text">
+      </div>
 
-      <!-- ===== SKILLS SECTION ===== -->
-      <section class="skills" id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-list">
-          <div class="skill">
-            <i class="ri-html5-fill"></i>
-            <span>HTML</span>
-          </div>
-          <div class="skill">
-            <i class="ri-css3-fill"></i>
-            <span>CSS</span>
-          </div>
-          <div class="skill">
-            <i class="ri-javascript-fill"></i>
-            <span>Java<br />Script</span>
-          </div>
-          <div class="skill">
-            <i class="ri-code-s-slash-line"></i>
-            <span>C Language</span>
-          </div>
-        </div>
-      </section>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bxs-up-arrow-circle"></i></a>
+      </div>
+    </footer>
 
-      <!-- ===== CONTACT SECTION ===== -->
-      <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>
-          Feel free to reach out for collaborations or just a friendly hello 👋
-        </p>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
 
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-      </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-      <!-- ===== FOOTER ===== -->
-      <footer>
-        <p>© 2025 Chiemel A. Santoile. All Rights Reserved.</p>
-      </footer>
-    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <script src="script.js"></script>
   </body>
 </html>

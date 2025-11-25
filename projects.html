@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chiemel A. Santoile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">My Porfolio </a>
+
+      <nav class="navbar">
+        <a href="index.html#home" class="active">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Skills</a>
+        <!--<a href="#portfolio">Portfolio</a>-->
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="bx bx-moon" id="darkMode-icon"></div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+   <!-- ===== PROJECTS SECTION ===== -->
+      <section class="projects">
+        <h2>My Projects</h2>
+        <p>
+          Here are some of my recent works in web development and programming.
+        </p>
+
+        <div class="projects-list">
+          <div class="project-card">
+            <img src="images/p1.jpg" alt="Project 1" />
+            <h3>Blog Website NetAware</h3>
+            <p>
+              A responsive Blog Website NetAware built with HTML, CSS, and
+              JavaScript.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <img src="images/todo.jpg" alt="Project 2" />
+            <h3>Todo App</h3>
+            <p>
+              A Python-based command-line application to manage daily tasks
+              efficiently.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <img src="images/pr2.jpg" alt="Project 3" />
+            <h3>Calculator</h3>
+            <p>
+              A simple calculator application using C language to practice
+              programming logic.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h2>NetAware BlogWebsite</h2>
+        <div class="project-card featured-project">
+          <img src="images/1234.jpg" alt="Featured Project" />
+          <h3>NetAware Blog Website</h3>
+          <p>
+            A modern Blog website system with animations, responsive UI, and
+            dynamic content. Built using HTML, CSS, and JavaScript to highlight
+            personal projects effectively.
+          </p>
+          <a
+            href="https://2501101448-pixel.github.io/NetAware/"
+            target="_blank"
+            class="project-link-btn"
+          >
+            Visit Project →
+          </a>
+        </div>
+      </section>
+    <footer class="footer">
+      <div class="footer-text">
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="projects.html#home"><i class="bx bxs-up-arrow-circle"></i></a>
+      </div>
+    </footer>
+
+    <script> /* ========================================
+   DARK MODE
+======================================== */
+let darkModeIcon = document.querySelector("#darkMode-icon");
+
+if (darkModeIcon) {
+  darkModeIcon.onclick = () => {
+    darkModeIcon.classList.toggle("bx-sun");
+    document.body.classList.toggle("dark-mode");
+  };
+}
+
+/* ========================================
+   SCROLL REVEAL
+======================================== */
+if (typeof ScrollReveal === "function") {
+  ScrollReveal({ distance: "80px", duration: 2000, delay: 200 });
+
+  ScrollReveal().reveal(".home-content, .heading, .projects h2", { origin: "top" });
+  ScrollReveal().reveal(".home-img, .services-container, .project-card, .contact form", { origin: "bottom" });
+  ScrollReveal().reveal(".home-content h1, .about-img img", { origin: "left" });
+  ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", { origin: "right" });
+}
+
+/* ========================================
+   BACK TO TOP BUTTON
+======================================== */
+const backToTop = document.querySelector(".footer-iconTop a");
+if (backToTop) {
+  backToTop.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+</script>
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
